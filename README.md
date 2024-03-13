@@ -1,79 +1,16 @@
-# NYC Crime Explorer
-A detailed descrition of the project with devBlogs of the entire project and a video presentation of the data can be found in [my portfolio.](https://maxfilsremfort.com/nyc-crime-explorer)
-## Table of Contents
+# NYC Arrests In 2022: Streamlit Visualization Dashboard
 
-- [Overview](#overview)
-- [Dataset](#dataset)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+# Dataset
+The dataset for this project can be found on [NYC Open Data](https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data) provided by the NYPD Police Department.
 
----
+This dataset is a list of every arrest in NYC going back to 2006 through the end of the previous calendar year. This data is manually extracted every quarter and reviewed by the Office of Management Analysis and Planning before being posted on the NYPD website. Each record represents an arrest effected in NYC by the NYPD and includes information about the type of crime, the location and time of enforcement. In this project we will only be focussing on the most recent year in the data (2022).
 
-## Overview
+# Objectives
 
-NYC Crime Explorer is a data science project that goes into crime patterns in New York City. The analysis covers various aspects, including the most arrested borough, crime trends over the years, gender distribution of arrests, and more.
+The main objecttive of this project is to develop a streamlit dashboard which users are able to filter the data (187,457 entries) to easily get an understanding of the stake of specifc crimes, borough, age groups, and more in 2022.
 
-The project includes Jupyter notebooks for exploratory data analysis, Python for data processing, and a detailed report in PDF format. A presentation video is available for a comprehensive overview.
+To achieve this objective, it was broken down into the following sub-objectives:
 
----
-
-## Dataset
-
-The dataset used for this project is sourced from: https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/about_data. It includes information on every arrest in NYC going back to 2006 through the end of the previous calendar year.
-
----
-
-## Project Structure
-
-- [data/](./data): Datasets.
-- [notebooks/](./notebooks): Jupyter notebooks for EDA and data cleaning.
-- [scripts/](./scripts): Python scripts for data processing and visualization.
-- [reports/](./reports): PDF generator report.
-- [presentation/](./presentation): PowerPoint presentation and video.
-- [src/](./src): Main scripts and dependencies.
-- [maps/](./maps): Maps or geographic visualizations.
-- [docs/](./docs): DevBlogs and video-related files.
-
----
-
-## Installation
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/MaxFilsr/NYC-Crime-Explorer.git
-    cd NYC-Crime-Explorer
-    ```
-
-2. Install dependencies:
-
-    ```bash
-    pip install -r src/requirements.txt
-    ```
-
----
-
-## Usage
-
-1. Run the main script:
-
-    ```bash
-    python src/main.py
-    ```
-
-2. Explore the Jupyter notebooks in the [notebooks/](./notebooks) directory for detailed analysis.
-3. Watch the [DevBlog videos.](maxfilsremfort.com/)
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-**For more information, check out my [portfolio](https://your-portfolio-website.com).**
+1. To perform in-depth exploratory data analysis of the dataset.
+2. To determin which forms of data visulization would easily and clearly display the data.
+3. To provide a interface that holds the visulizations, easliy filer the data set to answer any of their questions, and provide easy to understadn summeries of the filtered data,.
